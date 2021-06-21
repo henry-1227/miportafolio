@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+body {
+    font-family: "Roboto Mono" , monospace;
+}
+a {
+    text-decoration: none;
+}
+.header-icons-container .icons {
+    justify-self: flex-end;
+    margin-right: 35px;
+}
+nav .profile-link {
+    justify-self: flex-end;
+    margin-right: 50px;
+}
+/* blogs */
+.grid-container {
+    margin: auto;
+}
+.blogs-posts-container .post-article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.blogs-posts-container .post-container img {
+    width: 100%;
+    height: 250px;
+}
+.contact-main-container {
+    display: flex;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    background-color: #e6e9ed;
+}
+.contact-container {
+    display: grid;
+    width: 50%;
+    height: 150px;
+    padding: 20px;
+    grid-template: 1fr / 1fr 3fr;
+    grid-template-areas:
+    "card-1 card-2";
+    gap: 8px;
+    align-items: center;
+}
+.contact-container img {
+    grid-area: card-1;
+    width: 100%;
+    height: auto;
+    justify-self: end;
+}
+.contact-container div {
+    grid-area: card-2;
+}
+.contact-container div a {
+    font-size: 18px;
+    padding: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    color: black;
+}
+.contact-container div p {
+    font-size: 14px;
+    padding: 15px;
+}
+/* Perfil */
+.sobremi-container .sobremi-section {
+    display: flex;
+    align-items: center;
+}
+.sobremi-section .sobremi-section-img-container img{
+    width: 100%;
+}
+.sobremi-section-info-container h2 {
+    margin: 15px;
+}
+.sobremi-section-info-container p {
+    margin: 15px;
+}
